@@ -32,6 +32,14 @@ GROUP BY industry
 ORDER BY 2 DESC;
 -- Consumer and Retail are industries with most layoffs
 
+SELECT stage, SUM(total_laid_off)
+FROM layoffs_staging2
+GROUP BY stage
+ORDER BY 2 DESC;
+--  Companies in the Post IPO stage were the most affected by the downsizing and closures
+
+
+
 
 
 
